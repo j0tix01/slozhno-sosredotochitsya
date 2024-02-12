@@ -8,6 +8,22 @@
   min-block-size: 100vh;
 }
 
+.link-shadow {
+  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
+}
+
+.section {
+  display: grid;
+  gap: 20px;
+}
+
+.title {
+  color: var(--title-color, #ff0070);
+  font-weight: 700;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 .page {
   color: var(--text-color, #f1b2ce);
   font-family: var(--page-font, "IBM Plex mono", monospace);
@@ -133,4 +149,48 @@
   color: var(--title-decor-color, #000028);
   font-weight: 700;
   background-color: var(--accent-color, #ff0070);
+}
+
+/* main */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 40px 10px;
+}
+
+/* 1st and 2nd sections */
+
+.articles-scroll {
+  display: grid;
+  gap: 20px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title-decor {
+  color: var(--title-decor-color, #000028);
+  background-color: var(--accent-color, #ff0070);
+}
+
+.link {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:focus {
+  outline: 0;
+}
+
+.link:focus-visible {
+  outline: 1px solid currentColor;
 }
