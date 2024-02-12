@@ -226,3 +226,115 @@
   justify-content: center;
   align-items: center;
 }
+
+/* media queries */
+
+@media (width >= 768px) {
+  .section-advice__title {
+    grid-column: span 2;
+  }
+
+  .articles-scroll {
+    grid-column: 2/4;
+  }
+
+  .rec-icon {
+    inset-inline-end: 28px;
+    inset-block-start: 20px;
+  }
+
+  .page-title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .section {
+    grid-template-columns: clamp(236px, calc(100% / 3.25), 315px) 1fr;
+  }
+
+  .section-answers__articles-scroll {
+    grid-column-start: span 2;
+  }
+
+  .section-pics {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .section-advice__articles-scroll {
+    grid-column: 2/4;
+  }
+
+  .pics-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .pics-list__item:first-child,
+  .pics-list__item:last-child {
+    grid-column-start: span 2;
+  }
+
+  .pics-list__item:nth-child(2),
+  .pics-list__item:nth-child(3) {
+    grid-row-start: span 2;
+  }
+
+  .header {
+    padding-inline-start: 0;
+  }
+
+  .header__theme-menu {
+    margin-block-start: 170px;
+    margin-block-end: 70px;
+  }
+
+  .header__title {
+    justify-self: end;
+    inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
+  }
+
+  .main {
+    gap: 80px;
+    padding: 60px 20px;
+  }
+}
+
+@media (width >= 1024px) {
+  .section-advice {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .page-title {
+    text-shadow: 4px 4px 0 var(--shadow-color, #ff0070);
+  }
+
+  .section-answers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section {
+    column-gap: 30px;
+  }
+
+  .section-answers__articles-scroll {
+    grid-column: span 1;
+    grid-row: 2/3;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+    margin-inline-start: 19px;
+    margin-block-start: 0;
+    margin-block-end: 214px;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+}
+
+@media (width < 1024px) and (prefers-color-scheme: light) {
+  .page-title {
+    text-shadow: 2px 2px 0 var(--accent-color, #ff8dcb);
+  }
+}
