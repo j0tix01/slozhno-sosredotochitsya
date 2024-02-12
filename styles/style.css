@@ -1,5 +1,136 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+/* dark theme mobile frist */
+
+/* general */
+
+.cover {
+  display: grid;
+  padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  min-block-size: 100vh;
+}
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  color: var(--text-color, #f1b2ce);
+  font-family: var(--page-font, "IBM Plex mono", monospace);
+  font-size: 18px;
+  line-height: 1.3;
+  background-color: var(--bg-color, #000028);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* header */
+
+.header {
+  align-items: start;
+  background-image: var(--bg-image, url("../images/cover-image-dark.png"));
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-inline-end: 1px solid var(--decor-color, #ff0070);
+  border-block-start: 1px solid var(--decor-color, #ff0070);
+  block-size: 25px;
+  inline-size: 25px;
+  inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-inline-start: 1px solid var(--decor-color, #ff0070);
+  border-block-end: 1px solid var(--decor-color, #ff0070);
+  block-size: 25px;
+  inline-size: 25px;
+  inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+}
+
+.rec-icon {
+  position: absolute;
+  z-index: 0;
+  visibility: var(--rec-icon-visibility, visible);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  inset-inline-end: 20px;
+  inset-block-start: 10px;
+}
+
+.rec-icon::before {
+  content: "REC";
+  color: var(--accent-color, #ff0070);
+  line-height: 26px;
+}
+
+.rec-icon::after {
+  content: "";
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px var(--accent-color, #ff0070);
+  background-color: var(--accent-color, #ff0070);
+  inline-size: 9px;
+  block-size: 9px;
+}
+
+.header__theme-menu {
+  margin-block-start: 65px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.header__theme-menu-button {
+  border: 1px solid transparent;
+  padding: 2px 12px;
+  color: var(--button-color, #ff0070);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 18px;
+  text-transform: lowercase;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header__theme-menu-button_active {
+  border-color: currentColor;
+  cursor: default;
+  pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+  border-color: var(--button-hover-color, #ff007040);
+}
+
+.header__theme-menu-button:focus {
+  outline: 0;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end-color: currentColor;
+}
+
+.page-title {
+  color: var(--page-title-color, #db00ff);
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0 var(--shadow-color, #ff0070);
+}
+
+.header__title {
+  margin-block: 55px;
+  color: var(--title-decor-color, #000028);
+  font-weight: 700;
+  background-color: var(--accent-color, #ff0070);
 }
