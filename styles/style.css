@@ -194,3 +194,9 @@
 .link:focus-visible {
   outline: 1px solid currentColor;
 }
+
+/* 3rd section */
+
+.section-advice .title-decor {
+  font-weight: 400;
+}
