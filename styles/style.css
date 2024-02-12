@@ -200,3 +200,23 @@
 .section-advice .title-decor {
   font-weight: 400;
 }
+
+/* 4th section */
+
+.section-pics {
+  gap: 10px;
+}
+
+.pics-list {
+  display: grid;
+  gap: 10px;
+}
+
+.pics-list__item-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
