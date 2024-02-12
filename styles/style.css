@@ -220,3 +220,9 @@
   object-position: center;
 }
 
+/* footer */
+
+.footer {
+  justify-content: center;
+  align-items: center;
+}
