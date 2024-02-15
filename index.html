@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
-    <link href="./images/favicon.ico" rel="icon" sizes="any" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -85,42 +88,46 @@
           </p>
         </article>
       </section>
-      <section class="section section-answers">
-        <h2 class="title">Что снижает концентрацию внимания?</h2>
-        <article class="article section-answers__articles-scroll">
-          <h3 class="title title-decor">Многозадачность</h3>
-          <p>
-            Как концентрация может снижаться из-за… концентрации? Любая
-            стрессовая ситуация (и резко меняющийся мир в целом) заставляет наш
-            мозг постоянно «сканировать» окружающую среду на предмет опасности.
-            Например, читать новости вместо работы. Но быть собранными всё время
-            — невозможно. Концентрация — мышца, и она может не выдержать, если
-            не давать ей отдохнуть.
-          </p>
-        </article>
-        <article class="article section-answers__articles-scroll">
-          <h3 class="title title-decor">Еда</h3>
-          <p>
-            «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
-            доставляют в мозг энергию и помогают ему лучше работать. Но уходит
-            эта энергия также быстро, как и приходит. А мы в результате попадаем
-            на «углеводные качели»: как только действие «быстрых углеводов»
-            заканчивается, мы чувствуем усталость и сонливость. И хотим ещё
-            больше быстрых углеводов.
-          </p>
-        </article>
-        <article class="article section-answers__articles-scroll">
-          <h3 class="title title-decor">Гаджеты</h3>
-          <p>
-            Да-да, это та самая ситуация, когда на экране ноутбука — код, в
-            наушниках — подкаст, а на компьютере фоном — ещё и видео с забавными
-            утятами. В результате мозг пытается переключиться с одной задачи на
-            другую — и просто не может. А чтобы вернуться к состоянию полной
-            концентрации, человеку в среднем нужно 20 минут. Вот и получается,
-            что чем больше времени мы проводим в гаджетах, тем больше времени
-            затем нужно, чтобы вернуться к работе.
-          </p>
-        </article>
+      <section class="section-answers">
+        <h2 class="title section-answers__title">
+          Что снижает концентрацию внимания?
+        </h2>
+        <div class="answer-container">
+          <article class="article section-answers__articles-scroll">
+            <h3 class="title title-decor">Многозадачность</h3>
+            <p>
+              Как концентрация может снижаться из-за… концентрации? Любая
+              стрессовая ситуация (и резко меняющийся мир в целом) заставляет
+              наш мозг постоянно «сканировать» окружающую среду на предмет
+              опасности. Например, читать новости вместо работы. Но быть
+              собранными всё время — невозможно. Концентрация — мышца, и она
+              может не выдержать, если не давать ей отдохнуть.
+            </p>
+          </article>
+          <article class="article section-answers__articles-scroll">
+            <h3 class="title title-decor">Еда</h3>
+            <p>
+              «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
+              доставляют в мозг энергию и помогают ему лучше работать. Но уходит
+              эта энергия также быстро, как и приходит. А мы в результате
+              попадаем на «углеводные качели»: как только действие «быстрых
+              углеводов» заканчивается, мы чувствуем усталость и сонливость. И
+              хотим ещё больше быстрых углеводов.
+            </p>
+          </article>
+          <article class="article section-answers__articles-scroll">
+            <h3 class="title title-decor">Гаджеты</h3>
+            <p>
+              Да-да, это та самая ситуация, когда на экране ноутбука — код, в
+              наушниках — подкаст, а на компьютере фоном — ещё и видео с
+              забавными утятами. В результате мозг пытается переключиться с
+              одной задачи на другую — и просто не может. А чтобы вернуться к
+              состоянию полной концентрации, человеку в среднем нужно 20 минут.
+              Вот и получается, что чем больше времени мы проводим в гаджетах,
+              тем больше времени затем нужно, чтобы вернуться к работе.
+            </p>
+          </article>
+        </div>
       </section>
       <section class="section section-advice">
         <h2 class="title section-advice__main-title">
@@ -131,7 +138,9 @@
           5 простых (на самом деле не очень) советов
         </h3>
         <article class="article section-advice__articles-scroll">
-          <h4 class="title title-decor">Представьте небо и облака</h4>
+          <h4 class="title title-decor regular-font">
+            Представьте небо и облака
+          </h4>
           <p>
             Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
             успокоиться. Ведь часто именно тревожные мысли о сложных задачах как
@@ -144,7 +153,7 @@
           </p>
         </article>
         <article class="article section-advice__articles-scroll">
-          <h4 class="title title-decor">Включите музыку</h4>
+          <h4 class="title title-decor regular-font">Включите музыку</h4>
           <p>
             Но не любую, и не любимую. Любимая может быть связана с сильными
             положительными эмоциями, которые тоже очень сильно отвлекают.
@@ -153,7 +162,9 @@
           </p>
         </article>
         <article class="article section-advice__articles-scroll">
-          <h4 class="title title-decor">Прогуляйтесь</h4>
+          <h4 class="title title-decor regular-font regular-font">
+            Прогуляйтесь
+          </h4>
           <p>
             Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
             <a
@@ -169,7 +180,7 @@
           </p>
         </article>
         <article class="article section-advice__articles-scroll">
-          <h4 class="title title-decor">Хорошо ешьте</h4>
+          <h4 class="title title-decor regular-font">Хорошо ешьте</h4>
           <p>
             Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
             которые препятствуют резким скачкам сахара в крови. Например, с
@@ -178,7 +189,7 @@
           </p>
         </article>
         <article class="article section-advice__articles-scroll">
-          <h4 class="title title-decor">Читайте</h4>
+          <h4 class="title title-decor regular-font">Читайте</h4>
           <p>
             Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы
             прочитать пост в соцсети, достаточно нескольких минут или даже
@@ -188,45 +199,45 @@
         </article>
       </section>
       <section class="section section-pics">
-          <h2 class="title title-decor">А можно в картинках?</h2>
-            <div class="pics-list">
-              <picture class="pics-list__item">
-                <img
-                  class="pics-list__item-img"
-                  src="./images/sunset.png"
-                  alt="Картинка с советом: Представьте небо и облака"
-                />
-              </picture>
-              <picture class="pics-list__item">
-                <img
-                  class="pics-list__item-img"
-                  src="./images/ice-cream.png"
-                  alt="Картинка с советом: Хорошо ешьте"
-                />
-              </picture>
-              <picture class="pics-list__item">
-                <img
-                  class="pics-list__item-img"
-                  src="./images/tape.png"
-                  alt="Картинка с советом: Включите музыку"
-                />
-              </picture>
-              <picture class="pics-list__item">
-                <img
-                  class="pics-list__item-img"
-                  src="./images/books.png"
-                  alt="Картинка с советом: Читайте"
-                />
-              </picture>
-              <picture class="pics-list__item">
-                <img
-                  class="pics-list__item-img"
-                  src="./images/street.png"
-                  alt="Картинка с советом: Прогуляйтесь"
-                />
-              </picture>
-            </div>
-        </section>
+        <h2 class="title title-decor">А можно в картинках?</h2>
+        <div class="pics-list">
+          <picture class="pics-list__item">
+            <img
+              class="pics-list__item-img"
+              src="./images/sunset.png"
+              alt="Картинка с советом: Представьте небо и облака"
+            />
+          </picture>
+          <picture class="pics-list__item">
+            <img
+              class="pics-list__item-img"
+              src="./images/ice-cream.png"
+              alt="Картинка с советом: Хорошо ешьте"
+            />
+          </picture>
+          <picture class="pics-list__item">
+            <img
+              class="pics-list__item-img"
+              src="./images/tape.png"
+              alt="Картинка с советом: Включите музыку"
+            />
+          </picture>
+          <picture class="pics-list__item">
+            <img
+              class="pics-list__item-img"
+              src="./images/books.png"
+              alt="Картинка с советом: Читайте"
+            />
+          </picture>
+          <picture class="pics-list__item">
+            <img
+              class="pics-list__item-img"
+              src="./images/street.png"
+              alt="Картинка с советом: Прогуляйтесь"
+            />
+          </picture>
+        </div>
+      </section>
     </main>
     <footer class="cover footer decorated-zone">
       <h2 class="page-title">focus</h2>
