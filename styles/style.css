@@ -97,7 +97,7 @@
 .rec-icon::after {
   content: "";
   border-radius: 50%;
-  box-shadow: 0 0 2px 2px var(--accent-color, #ff0070);
+  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
   background-color: var(--accent-color, #ff0070);
   inline-size: 9px;
   block-size: 9px;
